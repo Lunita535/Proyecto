@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(24, 23, 23);
+    font-size: 20px;
+    margin-top: 60px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo{
+    width: 150px;
+    height: 80px;
+    display: block;;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-horizontal> li > a{
+    display: block;
+    padding: 15px 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.menu-horizontal> li:hover{
+    background-color: rgb(60, 205, 253);
+}
