@@ -1,9 +1,10 @@
 body{
     background-color: black;
     font-family: sans-serif;
+    color: white;
 }
 nav{
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     background-color: rgb(24, 23, 23);
     font-size: 20px;
@@ -15,8 +16,8 @@ nav{
     padding: 10px 20px;
 }
 .logo{
-    width: 150px;
-    height: 80px;
+    width: 180px;
+    height: 120px;
     display: block;;
 }
 .menu-horizontal{
@@ -33,4 +34,64 @@ nav{
 }
 .menu-horizontal> li:hover{
     background-color: rgb(60, 205, 253);
+    
+}
+main {
+    max-width: 1900px;
+    margin: 40px auto; 
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    gap: 150px; 
+    align-items: flex-start; 
+}
+.usuario {
+    flex-basis: 280px;
+    flex-shrink: 0;  
+    background-color: rgb(24, 23, 23);
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center; 
+    height: 500px;
+}
+.usuario img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid rgb(60, 205, 253);
+}
+.columna-publicaciones {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.titulo {
+    border-radius: 7px;
+    padding: 5px 20px; 
+}
+.post {
+    background-color: rgb(24, 23, 23);
+    border-radius: 7px;
+    padding: 35px;
+    border: 3px solid rgb(60, 205, 253);
+    width: 600px;
+}
+.post img {
+    width: 60%;
+    height:400;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+footer{
+    background-color: rgb(24, 23, 23);
+    height:60px;
+    padding:20px;
+    margin:20px;
+    text-align:center;
+    color:rgba(185, 176, 176, 1);
+    border-radius: 7px;
 }
