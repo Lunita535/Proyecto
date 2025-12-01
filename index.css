@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+nav{
+    max-width: 1500px;
+    margin: auto;
+    background-color: rgb(24, 23, 23);
+    font-size: 20px;
+    margin-top: 60px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo{
+    width: 80px;
+    height: 60px;
+    display: block;;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-horizontal> li > a{
+    display: block;
+    padding: 15px 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.menu-horizontal> li:hover{
+    background-color: rgb(60, 205, 253);
+}
+main {
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+.container{
+    width: 80%;
+    margin: 40px auto; 
+    background-color: rgb(24, 23, 23); 
+    border-radius: 7px;
+    padding-bottom: 20px;
+}
+.intro {
+    background-color: rgb(24, 23, 23);
+}
+.photos{
+	height: 300px;
+	position: relative;
+    margin-bottom: 50px;
+}
+.photos .coverdefoto {
+    width: 100%;
+	height: 100%;
+    object-fit: cover;
+    border-radius: 7px 7px 0 0;
+}
+.photos .fotodeperfil{
+	height: 180px;
+	width: 180px;
+	border-radius: 160px;
+	overflow: hidden;
+	background: rgb(60, 205, 253);
+	padding: 5px;
+	position: absolute;
+    bottom: -60px; 
+    left: 40px; 
+    border: 5px solid rgb(24, 23, 23); 
+    z-index: 10;
+}
+.fotodeperfil img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+    object-fit: cover;
+}
+.info-perfil {
+    display: flex; 
+    align-items: flex-end;
+    justify-content: space-between; 
+    padding: 0 40px; 
+    margin-top: -30px;
+}
+.title {
+	margin-top: 0;
+	padding:0 15px;
+    position: static;
+    margin-left: 190px;
+}
+.title h1 {
+	font-size: 30px;
+	display: block;
+	font-family: sans-serif
+}
+.buttons{
+	position: static;
+	top: auto;
+	left: auto;
+	margin: 0;
+	padding: 0;
+	display: flex;
+    gap:10px;
+    align-items: center;
+}
+.btn {
+	padding: 10px 15px;
+	font-size: 17px;
+	border: none;
+	outline: none;
+	text-transform: capitalize;
+	background: #ddd;
+	border-radius: 8px;
+	font-weight: 600;
+	transition: all 0.1s;
+	font-family: Arial;
+}
+.btn3 .btn2 {
+	padding:10px 13px ;
+}
+
+.btn1{
+	background: rgb(60, 205, 253);
+	color: black;
+}
+
+.btn1:hover {
+	transform:scale(0.98) ;
+	background: rgb(60, 205, 253);
+	color: black;
+}
+
+.btn2:hover, .btn3:hover{
+	transform: scale(0.98);
+	background:#bbb;
+}
+
+.about {
+	margin: 30px 40px 10px 40px;
+	padding: 0;
+	font-family: sans-serif;
+    position: static;
+}
+
+.about ul {
+	margin-top: 20px;
+}
+
+ul li{
+	list-style: none;
+	display: flex;
+	font-size: 18px;
+	margin: 22px 0;
+}
+
+ul li i {
+	font-size: 20px;
+	margin-right: 15px;
+	color:rgb(60, 205, 253);
+}
+
+ul li p span {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.friends{
+padding: 0 40px;
+}
+
+.friends .tittlebox {
+	margin-top: 15px;
+	font-family: sans-serif;
+}
+
+.tittlebox h1 {
+	margin-top: 3px;
+	text-transform: capitalize;
+}
+
+.tittlebox p {
+	font-size: 20px;
+	color: rgb(24, 23, 23);
+}
+.friends .tittlebox p {
+    color: white; 
+}
+.friends .friendsphoto {
+	margin-top: 20px;
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    grid-gap: 20px 20px;
+}
+
+.friendsphoto .photobox img {
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
+}
+
+.photobox {
+	margin-right: 6.6px;
+	transition: all 0.5s;
+}
+
+.photobox:hover{
+	transform: scale(1.07);
+}
+
+.photobox h3 {
+	padding: 0 7px;
+	text-transform: capitalize;
+	font-family: sans-serif;
+}
+
+.friends button{
+	width: 100%;
+	background: rgba(185, 176, 176, 1);
+	border:none;
+	outline: none;
+	padding: 10px 0;
+	margin: 30px;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 10px;
+	transition: all 0.1s;
+}
+
+.friends button:hover {
+	background: rgb(60, 205, 253);
+	transform: scale(0.99);
+}
+footer{
+    background-color: rgb(24, 23, 23);
+    height:100px;
+    padding:10px;
+    margin:15px;
+    text-align:center;
+    color:rgba(185, 176, 176, 1);
+    border-radius: 7px;
+}
